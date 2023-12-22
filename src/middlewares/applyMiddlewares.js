@@ -3,7 +3,8 @@ const cors = require('cors');
 
 const applyMiddleware = (app) => {
     app.use(cors({
-        origin: [ 'http://localhost:5173'
+        origin: [ 'http://localhost:5173',
+        'https://clever-fenglisu-a864e4.netlify.app'
         ],
         credentials: true
     }));
